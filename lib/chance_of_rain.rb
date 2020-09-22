@@ -1,6 +1,6 @@
-puts "What is the chance of rain? Enter percent chance as a decimal."
+puts "What is the chance of rain? Enter percent chance of rain"
 
-chance_of_rain = gets.strip.to_f
+chance_of_rain = (gets.strip.to_i / 100)
 if chance_of_rain <= 0.25
   puts "Pack a sun shelter!"
 elsif (chance_of_rain > 0.25 && chance_of_rain < 0.75)
